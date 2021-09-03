@@ -16,21 +16,38 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <div class="row">
-          <div class="col-6">
-            <h1>New York</h1>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="row">
+            <div class="col-6">
+              <div class="overview">
+                <h1>New York</h1>
 
-            <ul>
-              <li>Thursday 19:00 , Clear Sky</li>
-              <li>
-                <span>Humidity : 44%</span>
-                <span>Wind 2 km/h</span>
-              </li>
-            </ul>
+                <ul>
+                  <li>Thursday 19:00 , Clear Sky</li>
+                  <li>
+                    <span>Humidity : 44%</span>
+                    <span>Wind 2 km/h</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="Sunny"
+                  class="float-left"
+                />
+                <div class="float-left">
+                  <strong>24</strong
+                  ><small><a href="#">°C</a> |<a href="#"> °F</a></small>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-6"><img src="" alt="Sunny" /> 24C</div>
         </div>
+
         <small>
           <a href="https://github.com/Mags93/NEW-APP" target="_blank">
             Open-source code</a
