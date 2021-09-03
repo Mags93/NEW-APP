@@ -50,8 +50,21 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-let apiKey = "ae2b4828efdd2e61b49f7cddc2e893a9";
+function search(city) {
+  let apiKey = "ae2b4828efdd2e61b49f7cddc2e893a9";
 
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Lisbon&appid=ae2b4828efdd2e61b49f7cddc2e893a9&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=ae2b4828efdd2e61b49f7cddc2e893a9&units=metric`;
 
-axios.get(apiUrl).then(displayTemperature);
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+search("New York");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
