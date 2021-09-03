@@ -11,6 +11,10 @@ ul {
   padding: 0;
 }
 
+li::first-letter {
+  text-transform: capitalize;
+}
+
 li {
   list-style: none;
   color: grey;
@@ -19,7 +23,6 @@ li {
   line-height: 20px;
   margin: 0;
   padding: 0;
-  text-transform: capitalize;
 }
 
 .weather-app-wrapper {
