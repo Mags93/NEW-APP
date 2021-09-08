@@ -1,7 +1,7 @@
 h1 {
   font-size: 38px;
   font-weight: 500;
-  line-height: 50px;
+  line-height: 100px;
   margin-bottom: 20;
   color: rgb(190, 22, 78);
 }
@@ -49,6 +49,7 @@ li {
   margin-left: 50px;
   width: 80px;
   margin-top: 10px;
+  line-height: 100px;
 }
 
 .weather-temperature strong {
