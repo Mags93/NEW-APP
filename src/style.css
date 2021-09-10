@@ -3,7 +3,7 @@ h1 {
   font-weight: 500;
   line-height: 100px;
   margin-bottom: 20;
-  color: rgb(190, 22, 78);
+  color: rgb(207, 71, 116);
 }
 
 ul {
@@ -29,9 +29,9 @@ li {
   max-width: 600px;
   margin: 50px auto;
   background: linear-gradient(
-    109.6deg,
-    rgb(255, 221, 225) 11.2%,
-    rgb(255, 255, 255) 92.2%
+    123.5deg,
+    rgb(244, 219, 251) 29.3%,
+    rgb(255, 214, 214) 67.1%
   );
 }
 
@@ -69,7 +69,7 @@ li {
 }
 
 #temperature {
-  color: rgb(190, 22, 78);
+  color: rgb(207, 71, 116);
 }
 
 .weather-temperature .active {
@@ -85,6 +85,7 @@ li {
 .btn {
   background-color: palevioletred;
   border-color: palevioletred;
+  box-shadow: 1px 1px 1px rgb(117, 117, 126);
 }
 
 .weather-forecast {
